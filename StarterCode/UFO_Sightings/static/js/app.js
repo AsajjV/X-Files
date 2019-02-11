@@ -1,5 +1,3 @@
-console.log("WTF is happening?")
-
 function buildMetadata(sample) {
   var url = `/table/${sample}`; //this url says, "look here for ___ sample state"
   console.log(url);
@@ -48,15 +46,15 @@ d3.json(graphUrl).then(function(response) { //give me the jsonified data for the
   var sightings = response;
   console.log(sightings);
 
-  var crap = Object.values(sightings); 
-  console.log(crap);
+  var stuff = Object.values(sightings); 
+  console.log(stuff);
 
   months = ["January 2018", "February 2018", "March 2018", "April 2018", "May 2018", "June 2018", "July 2018", "August 2018", "September 2018", "October 2018", "November 2018", "December 2018"];
 
   // @TODO: Build a bar Chart using the sample data
   var trace1 = {
     x: months,
-    y: crap,
+    y: stuff,
     type: 'bar',
     };
 
